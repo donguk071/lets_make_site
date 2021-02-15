@@ -1,14 +1,144 @@
-hello world
-
+<!doctype html>
 <html>
     <head>
-        <title>example 1-2</title>
+        <meta charset="utf-8">
+        <meta name ="viewport" content="width = device-width">
+        <title>정수 페이지(+동욱) </title> <!-- 탭에 올라가는 글자. 홈페이지의 이름에 해당한다. -->
+        <link href = "style.css" rel = "stylesheet" type = "text/css" />
+        <style> /*css부분이다 주석 달라지는거 신기하면서 극혐이다*/
+            .nav{
+                height: 70px;
+                border-bottom: 1px solid black;
+                display: flex; /*횡대로 만들어버리기(행)*/
+                align-items:center ; /*가운데로*/
+            }
+
+            .nav-right-items {
+                display:  flex;
+                margin-left: auto;
+            }
+
+            .nav-item{
+                margin-left: 10px;
+            }     /*간격정리*/
+            
+            .pagename{
+                margin-left: 20px;
+            }
+
+            .title{
+                text-align: center;
+                font-size: 60px;
+                font-weight: bold;
+            }
+
+            .subtitle{
+                text-align: center;
+                font-size: 40px;
+                font-weight: 300;
+            }
+            
+            .main{
+                width: 800px;
+                margin: 0 auto;
+                margin-top: 60px;
+            }
+
+            .button{
+                width: 300px;
+                height: 300px;
+                border: 1px solid black;
+                margin: 0 auto;
+                margin: 20px;
+                border-radius: 4px;
+            }
+
+            .file{
+                text-align: center;
+                display: flex;
+            }
+
+        </style>
+    
     </head>
+
     <body>
-        <H2>example 1-2</H2>
-        <HR>
-        example 1-2
-    </body>
+        <div class = "nav"> <!--class를 사용하여 공간을 분리하여준다-->
+            <div class = "pagename">
+                파일 공유 홈페이지 입니다~ 21.02.13
+            </div>
+
+            <div class = "nav-right-items">
+                <div class = "nav-item"> 로그인</div>
+                <div class = "nav-item"> 가입</div>
+                <div class = "nav-item"> 개발자</div>
+                <div class = "nav-item"> 단백질</div>
+            </div>
+        </div>
+<!--제목부분 PPT로 치면 큰글자-->
+        <div class = "main">
+            <div class = "title">
+                파일 공유 홈페이지
+            </div>
+
+            <div class = "subtitle">
+                파일을 업로드 하고싶나요? 파일 업로드 버튼을 눌러주세용~
+            </div>
+            <div class = "file">
+                <SCRIPT LANGUAGE = 'JAVASCRIPT'>
+                    function filebtn(){
+                        alert("파일 업로드 버튼을 누르셨습니다!!")//실행 코드				
+                    }
+                </SCRIPT>      
+                <div class = "button">
+                    <div class = button-title>
+                        뭘까여
+                    </div>
+                    <button class = button-botton onclick = "filebtn()">
+                        다른방식의 버튼?!
+                    </div>
+                    <div class = button-detail>
+                        무슨 내용이있을까요?
+                    </div>
+                </div>
+                
+                <div class = "button">
+                    <div class = button-title>
+                        뭘까여
+                    </div>
+                    <div class = button-botton>
+                        <input type="button" name="normalbtn" value = "비밀스러운 정수의 버튼" onclick = "filebtn()">
+                    </div>
+                    <div class = button-detail>
+                        무슨 내용이있을까요?
+                    </div>
+                </div>
+                
+                <div class = "button">
+                    <div class = button-title>
+                        파일
+                    </div>
+                    <div class = button-button>
+                        <!--image/* 대신에 image/png, image/jpeg 처럼도 쓸 수 있다. 콤마로 여러개 부여 가능하다. 근데 업로드는 안함. 
+                        multiple은 한번에 여러개 올릴수 있게 해줌-->
+                        <input type="file" name="uploadimg1" id = "imageFileOpeninput" accept = "image/*" multiple>            
+                    </div>
+                    <div class = button-detail>
+                        파일 어쩌구 저쩌구
+                    </div>
+                   </div>
+              </div>
+
+
+        </div>
+
+	</body>
 </html>
 
 
+
+<!--p 태그 내에서 작성된 여러 번의 띄어쓰기와 줄 나누기는 오직 하나의 띄어쓰기로만 표현-->
+<!--pre 태그(preformatted text) 내에 작성된 텍스트의 모든 띄어쓰기와 줄 나누기는 웹 브라우저에 그대로 표현-->
+<!--hr 가로줄 하나 그어 주는 태그-->
+<!--b, strong 글씨를 굵게 만들어 주네여-->
+   
