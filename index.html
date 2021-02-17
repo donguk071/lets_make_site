@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name ="viewport" content="width = device-width">
-        <title>정수 페이지(+동욱) </title> <!-- 탭에 올라가는 글자. 홈페이지의 이름에 해당한다. -->
+        <title>정수와 동욱의 개발사이트 </title> <!-- 탭에 올라가는 글자. 홈페이지의 이름에 해당한다. -->
         <link href = "style.css" rel = "stylesheet" type = "text/css" />
         <style> /*css부분이다 주석 달라지는거 신기하면서 극혐이다*/
             .nav{
@@ -70,8 +70,36 @@
                 파일 공유 홈페이지 입니다~ 21.02.13
             </div>
 
+
+			<SCRIPT LANGUAGE = 'JAVASCRIPT'>
+                    function newpage(){
+                       window.location.herf = 'http://naver.com'			
+                    }
+            </SCRIPT>
+
+				
+				
             <div class = "nav-right-items">
+				<!--로그인 텍스트...-->
                 <div class = "nav-item"> 로그인</div>
+				<!--로그인1 - input이용-->
+				<div class = "login1">
+					<input type="button" value ="로그인" onClick="location.herf='loginpage.html'">
+				</div>
+				<!--로그인2 - a와 herf이용-->
+				<div class = "login2">
+					<a herf = "#" onClick="location.herf='loginpage.html'">로그인2</a>
+				</div>
+				<div class = "login3">
+					<a class = "plz" herf ="loginpage.html">로그인3</a>
+				</div>
+				
+				<!--로그인3 - button 이용-->
+				<div class = "gotonaver">
+					<button onClick= "newpage">네이버로이동</button>
+				</div>
+				
+				
                 <div class = "nav-item"> 가입</div>
                 <div class = "nav-item"> 개발자</div>
                 <div class = "nav-item"> 단백질</div>
@@ -91,7 +119,8 @@
                     function filebtn(){
                         alert("파일 업로드 버튼을 누르셨습니다!!")//실행 코드				
                     }
-                </SCRIPT>      
+                </SCRIPT>  
+				<!--버튼1-->
                 <div class = "button">
                     <div class = button-title>
                         뭘까여
@@ -103,7 +132,7 @@
                         무슨 내용이있을까요?
                     </div>
                 </div>
-                
+                <!--버튼2-->
                 <div class = "button">
                     <div class = button-title>
                         뭘까여
@@ -115,11 +144,27 @@
                         무슨 내용이있을까요?
                     </div>
                 </div>
-                
+                <!--버튼3-->
                 <div class = "button">
                     <div class = button-title>
                         파일
                     </div>
+					
+					
+					<!--action : 해당 파일을 어디다 전송할지 지정해주는 곳-->
+					<form name="contact" action = "/" method = "post" enctype="multipart/form-data" data-netlify="true">
+						<div>
+						<input type = "file" name = "uploads">
+						</div>
+						
+						<div class = button-detail>
+                        몬가 이상한데로 가버리는 버튼
+						</div>
+					
+						<input type = "submit">
+					</form>
+					
+					
                     <button class = button-botton >
                         <input type="file" class="button-botton-botton" name="uploadimg1" id = "imageFileOpeninput" accept = "image/*" multiple>
                     </button>  
